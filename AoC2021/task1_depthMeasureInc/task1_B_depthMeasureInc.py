@@ -1,3 +1,7 @@
+# Wczytujemy wejscie do lines, przechodzimy po kolejnych trojkach intow,
+# sumujemy trojki, sprawdzamy, czy wartosc wzgledem poprzedniej sie zwiekszyla,
+# jesli tak, to zwiekszamy licznik 
+
 file = open("task1_depthMeasureInc_input.txt")
 lines = file.readlines()
 
@@ -7,7 +11,7 @@ depthIncreases = 0
 index = 2
 
 while index < len(lines) :
-    newDepthSum = int(lines[index-2]) + int(lines[index-1]) + int(lines[index])    # assuming single integer on each line
+    newDepthSum = int(lines[index-2]) + int(lines[index-1]) + int(lines[index])
     
     if oldDepthSum < newDepthSum :
         depthIncreases += 1
