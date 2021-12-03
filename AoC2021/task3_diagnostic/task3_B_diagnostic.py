@@ -3,9 +3,6 @@ lines = file.readlines()
 
 length = len(lines[0]) - 1
 
-gamma = [0 for i in range(length)]
-epsilon = [0 for i in range(length)]
-
 oxygen = lines
 co2 = lines
 
