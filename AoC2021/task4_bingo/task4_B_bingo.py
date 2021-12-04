@@ -1,12 +1,10 @@
 file = open("task4_bingo_input.txt")
 lines = file.readlines()
 
-numbersStrings = lines[0].split(",")
+numbers = lines[0].split(",")
 
-numbers = []
-
-for nS in numbersStrings :
-    numbers.append(int(nS))
+for i in range(len(numbers)) :
+    numbers[i] = int(numbers[i])
 
 squares = []
 newSquares = []
@@ -25,10 +23,9 @@ for i in range (2, 1000, 6) :
     square = []
     
     for j in range(5) :
-        rowStrings = lines[i+j].split()
-        row = []
-        for item in rowStrings :
-            row.append(int(item))
+        row = lines[i+j].split()
+        for k in range(len(row)) :
+            row[k] = int(row[k])
         square.append(row)
 
     squares.append(square)
