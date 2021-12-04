@@ -32,15 +32,12 @@ for i in range (2, 1000, 6) :
 
     squares.append(square)
 
-#print(squares)
-
 for number in numbers :
     for square in squares :
         for row in square :
             for i in range(5) :
                 if row[i] == number :
                     row[i] = -1
-
 
     for square in squares :
         for row in square :
@@ -49,7 +46,6 @@ for number in numbers :
                 if item == -1 :
                     bingosInRow += 1
             if bingosInRow == 5 :
-                print("Row")
                 break
             
         for i in range(5) :
@@ -58,8 +54,6 @@ for number in numbers :
                 if row[i] == -1 :
                     bingosInColumn += 1
             if bingosInColumn == 5:
-                print("Column")
-                print(square)
                 break
 
         if bingosInRow == 5 or bingosInColumn == 5:
