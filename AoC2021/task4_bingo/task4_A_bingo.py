@@ -1,4 +1,4 @@
-file = open("task4_input.txt")
+file = open("task4_bingo_input.txt")
 lines = file.readlines()
 
 numbersStrings = lines[0].split(",")
@@ -9,7 +9,6 @@ for nS in numbersStrings :
     numbers.append(int(nS))
 
 squares = []
-newSquares = []
 
 finish = False
 
@@ -42,8 +41,7 @@ for number in numbers :
                 if row[i] == number :
                     row[i] = -1
 
-    bingosInRow = 0
-    bingosInColumn = 0
+
     for square in squares :
         for row in square :
             bingosInRow = 0
@@ -63,33 +61,18 @@ for number in numbers :
                 print("Column")
                 print(square)
                 break
-        
-        print("KUPA")
-        print(bingosInColumn)
-        print(bingosInRow)
 
         if bingosInRow == 5 or bingosInColumn == 5:
-            print("HALO")
-            newSquares = []
-            for s in squares :
-                print(s)
-                if s != square :
-                    print(s)
-                    newSquares.append(s)
-            squares = newSquares
+            for row in square :
+                for item in row :
+                    if item != -1 :
+                        sum += item
+
+            toMult = number
+            finish = True
             break
 
-    print(len(squares))
-    print(len(newSquares))
-
-
-    if len(squares) == 1:
-        toMult = number
-        for row in squares[0] :
-            for item in row :
-                if item != -1 :
-                    sum += item
-
+    if finish :
         break
     
 print(sum*toMult)
