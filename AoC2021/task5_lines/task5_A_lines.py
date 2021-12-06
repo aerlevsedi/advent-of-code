@@ -15,23 +15,17 @@ for i in range(len(lines)) :
     y2 = int(secondPair[1])
 
     if x1==x2 :
-        # print("x takie same :", x1, y1, ",", x2, y2)
         top = min(y1, y2)
         bottom = max(y1, y2)
     
         for a in range(top, bottom+1) :
-            # print("przed:", board[a][x1])
             board[a][x1] += 1
-            # print("po:", board[a][x1])
 
     if y1==y2 :
-        # print("y takie same: ", x1, y1, ",", x2, y2)
         left = min(x1, x2)
         right = max(x1, x2)
         for a in range(left, right+1) :
-            # print("przed:", board[y1][a])
             board[y1][a] += 1
-            # print("po:", board[y1][a])
 
 result = 0
 
