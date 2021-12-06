@@ -6,7 +6,7 @@ depth = 0
 
 for line in lines :
     direction = line.split(" ")
-    print(direction[0] + "x" + direction[1])
+
     if direction[0] == "down" :
         depth += int(direction[1])
     elif direction[0] == "up" :

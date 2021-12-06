@@ -32,7 +32,6 @@ for line in lines :
             break
     
     if secondCond :
-        print(line)
         numberOfNiceWords += 1
 
 print(numberOfNiceWords)

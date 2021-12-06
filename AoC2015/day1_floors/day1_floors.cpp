@@ -14,8 +14,6 @@ int main() {
     string line;
     getline(inputFile, input);
 
-
-    //cout << input.length() << endl;
     for (int i = 0; i < input.size(); i++) {
         if (input[i] == '(') {
             floor++;
@@ -28,8 +26,5 @@ int main() {
             break;
         }
     }
-
-
-    //cout << floor;
     return 0;
 }
