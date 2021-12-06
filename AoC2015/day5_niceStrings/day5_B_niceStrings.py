@@ -1,4 +1,4 @@
-file = open("task5_niceStrings_input.txt")
+file = open("day5_niceStrings_input.txt")
 lines = file.readlines()
 
 numberOfNiceWords = 0

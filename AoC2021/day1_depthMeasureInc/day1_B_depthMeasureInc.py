@@ -2,7 +2,7 @@
 # sumujemy trojki, sprawdzamy, czy wartosc wzgledem poprzedniej sie zwiekszyla,
 # jesli tak, to zwiekszamy licznik 
 
-file = open("task1_depthMeasureInc_input.txt")
+file = open("day1_depthMeasureInc_input.txt")
 lines = file.readlines()
 
 oldDepthSum = int (lines[0]) + int(lines[1]) + int(lines[2])

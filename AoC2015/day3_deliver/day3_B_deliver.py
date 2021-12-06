@@ -1,4 +1,4 @@
-file = open("task3_deliver_input.txt")
+file = open("day3_deliver_input.txt")
 
 horizontal = 0
 vertical = 0

@@ -1,6 +1,6 @@
 import hashlib
 
-file = open("task4_hash_input.txt")
+file = open("day4_hash_input.txt")
 word = file.readline()
 
 for i in range(0, 100000000) :

@@ -1,4 +1,4 @@
-file = open("task3_deliver_input.txt")
+file = open("day3_deliver_input.txt")
 
 line = file.readline()
 horizontal = 0

@@ -1,4 +1,4 @@
-file = open("task1_floors_input.txt")
+file = open("day1_floors_input.txt")
 
 floor = 0
 

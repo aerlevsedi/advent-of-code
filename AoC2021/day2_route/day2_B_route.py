@@ -1,4 +1,4 @@
-file = open("task2_route_input.txt")
+file = open("day2_route_input.txt")
 
 lines = file.readlines()
 horizontal = 0

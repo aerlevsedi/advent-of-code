@@ -1,4 +1,4 @@
-file = open("task6_lights_input.txt")
+file = open("day6_lights_input.txt")
 lines = file.readlines()
 
 lights = [[False for i in range(1000)] for j in range(1000)]

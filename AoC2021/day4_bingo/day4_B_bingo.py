@@ -1,4 +1,4 @@
-file = open("task4_bingo_input.txt")
+file = open("day4_bingo_input.txt")
 lines = file.readlines()
 
 numbers = lines[0].split(",")

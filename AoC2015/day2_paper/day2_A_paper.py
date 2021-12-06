@@ -1,4 +1,4 @@
-file = open("task2_paper_input.txt")
+file = open("day2_paper_input.txt")
 lines = file.readlines()
 
 paper = 0

@@ -1,4 +1,4 @@
-file = open("task6_input.txt")
+file = open("day6_lanternfish_input.txt")
 line = file.readline()
 
 numbers = line.split(",")

@@ -1,4 +1,4 @@
-file = open("task3_diagnostic_input.txt")
+file = open("day3_diagnostic_input.txt")
 lines = file.readlines()
 
 length = len(lines[0]) - 1

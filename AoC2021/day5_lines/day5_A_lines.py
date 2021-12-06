@@ -1,4 +1,4 @@
-file = open("task5_lines_input.txt")
+file = open("day5_lines_input.txt")
 lines = file.readlines()
 
 board = [[0 for i in range(1000)] for j in range(1000)]

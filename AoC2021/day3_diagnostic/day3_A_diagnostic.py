@@ -1,4 +1,4 @@
-file = open("task3_input.txt")
+file = open("day3_input.txt")
 lines = file.readlines()
 
 length = len(lines[0]) - 1
