@@ -9,10 +9,7 @@ for i in range(len(numbers)) :
     timer = int(numbers[i])
     fishes[timer] += 1
 
-print(fishes)
-
 for d in range(80) :
-    print("przed", fishes)
     tmp = fishes[0]
 
     for i in range(8) :
@@ -20,8 +17,6 @@ for d in range(80) :
 
     fishes[6] += tmp
     fishes[8] = tmp
-
-    print("po", fishes, "\n")
 
 sum = 0
 
