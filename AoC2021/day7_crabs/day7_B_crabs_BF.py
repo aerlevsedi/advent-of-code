@@ -1,4 +1,4 @@
-file = open("day7_input.txt")
+file = open("day7_crabs_input.txt")
 line = file.readline()
 
 crabs = line.split(",")
@@ -9,13 +9,17 @@ for i in range(len(crabs)) :
     maksPos = max(maksPos, crabs[i])
 
 bestAlign = 1000000000
+pos = -1
 
 for i in range(maksPos+1) :
-    currenAlign = 0
+    currentAlign = 0
     for j in range(len(crabs)) :
         dist = abs(i - crabs[j])
-        currenAlign += dist
+        currentAlign += ((1 + dist) * dist) / 2
 
-    bestAlign = min(currenAlign, bestAlign)
+    if bestAlign > currentAlign :
+        pos = i
+    bestAlign = min(currentAlign, bestAlign)
 
+print(pos)
 print(bestAlign)

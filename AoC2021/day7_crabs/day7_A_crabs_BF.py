@@ -1,4 +1,4 @@
-file = open("day7_input.txt")
+file = open("day7_crabs_input.txt")
 line = file.readline()
 
 crabs = line.split(",")
@@ -14,7 +14,9 @@ for i in range(maksPos+1) :
     currenAlign = 0
     for j in range(len(crabs)) :
         dist = abs(i - crabs[j])
-        currenAlign += ((1 + dist) * dist) / 2
+        currenAlign += dist
+        if currenAlign >= bestAlign :
+            break
 
     bestAlign = min(currenAlign, bestAlign)
 
