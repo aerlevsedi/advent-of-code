@@ -1,3 +1,11 @@
+# dla kazdej liczby sposrod wylosowanych w bingo spradzamy w kazdym kwadracie 
+# czy taka liczba wystapila jesli tak, to podmieniamy ja na -1
+# nastepnie sprawdzamy w kazdym kwadracie czy w ktorejs kolumnie albo wierszu 
+# jest juz trafionych 5 liczb, czyli pol ustawionych na -1
+# jesli tak to obliczamy sume pozostalych w kwadracie liczb
+# i zapisujemy liczbe dla ktorej padlo bingo
+# jako wynik zwracamy iloczyn sumy i zapisanej liczby
+
 file = open("day4_bingo_input.txt")
 lines = file.readlines()
 
@@ -66,6 +74,3 @@ for number in numbers :
         break
     
 print(sum*toMult)
-
-
-

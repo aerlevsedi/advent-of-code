@@ -1,3 +1,14 @@
+# szukamy dwóch ciągów które spełniają warunki dla oxygen oraz dla co2
+# dla oxygen sprawdzamy dla kazdej kolumny jaka jest
+# najczestsza wartosc w niej wystepujace
+# nastepnie zapisujemy jedynie te linie z wejscia
+# ktore mialy w tej kolumnie tę najczęstszą wartość
+# przerywamy gdy zostanie tylko jedna linia
+# dla co2 proces przebiega podobnie tylko szykamu wartosci
+# ktore pojawiaja sie najrzadziej
+# na koniec obliczamy wartosci tych ciagow w systemie dziesietnym
+# a jako wynik zwracamy ich iloczyn 
+
 file = open("day3_diagnostic_input.txt")
 lines = file.readlines()
 

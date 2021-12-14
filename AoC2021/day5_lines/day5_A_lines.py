@@ -1,3 +1,9 @@
+# tworzymy tablice do zapisywania liczby rur przechodzacych przez dany punkt
+# bierzemy pod uwage tylko wspolrzedne ktory maja wspolny wartosc na x albo y
+# dla kazdych takich prarwspolrzednych przechodzimy z jednego punktu do drugiego
+# i po drodze zwiekszamy wartosci w tablicy dla danych indeksow
+# na koniec obliczamy ile jest miejsc, w ktorych przechodza co najmniej 2 rury
+
 file = open("day5_lines_input.txt")
 lines = file.readlines()
 

@@ -1,3 +1,8 @@
+# analogicznie jak w pierwszej czesci szukamy bingo ale kazdy kwadrat 
+# w ktorym bingo padlo jest usuwany z listy
+# wynik obilczamy jako iloczyn sumy liczb z ostatniego kwadratu 
+# oraz liczby dla ktorej padlo ostatnie bingo
+
 file = open("day4_bingo_input.txt")
 lines = file.readlines()
 

@@ -1,3 +1,8 @@
+# podobnie do pierwszej czesci zadania, 
+# z tym ze rozpatrujemy rowniez przejscia po przekatnej
+# dlatego nalezy rozpoznac z ktorego punktu do ktorego chcemy sie przemieszczac
+# w tablicy i odpowiednio przesuwac indeksy
+# wynik ponownie jest liczba pol przez ktore przechodza co najmniej dwie rury
 file = open("day5_lines_input.txt")
 lines = file.readlines()
 

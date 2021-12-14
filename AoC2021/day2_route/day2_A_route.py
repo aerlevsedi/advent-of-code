@@ -1,3 +1,11 @@
+# ustawiamy poczatkowo glebokosc i polozenie na 0
+# wczytujemy wejscie, idziemy po kolejnych liniach i sprawdzamy,
+# czy pierwsze słowo to 
+# down -> wtedy zwiekszamy glebokosc o odana wartosc
+# up -> zmniejszamy glebokosc o podana wartosc
+# forward -> zwiekszamy polozenie w poziomie o podana wartosc
+# na koniec obliczamy iloczyn glebokosc * polozenie w poziomie
+
 file = open("day2_route_input.txt")
 
 lines = file.readlines()

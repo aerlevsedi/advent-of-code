@@ -1,3 +1,11 @@
+# wczytujemy wejscie i sprawdzamy jaka jest dlugosc ciagu bitow
+# tworzymy dwie tablice dla wskaznikow gamma i epsilon
+# dla kazdej kolumny obliczamy czy wiecej bylo jedynek czy zer
+# jesli jedynek bylo wiecej, to gamma dla danej kolumny wynosi 1, 
+# a epsilon wynosi 0, wpp wartosci są odwrotne
+# na koniec obliczamy dziesietne wartosc dla gamma i epsilon
+# obliczamy wynik jako iloczyn dziesietny iloczyn
+
 file = open("day3_input.txt")
 lines = file.readlines()
 
